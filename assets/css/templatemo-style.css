@@ -498,22 +498,8 @@ section.my-work .section-heading {
     width: 100%;
     min-height: max-content;
     margin: auto;
-}
-
-.isotope-toolbar input[type="radio"] {
-    display: none;
-}
-
-.isotope-toolbar span {
-    text-transform: capitalize;
-    display: inline-block;
-    margin-right: 15px;
-    padding-bottom: 3px;
-    font-size: 15px;
-    font-weight: 700;
-    border-bottom: 2px solid transparent;
-    transform: ease-in-out 0.5s;
-    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
