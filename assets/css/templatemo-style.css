@@ -41,8 +41,8 @@ a:hover {
 }
 
 p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    /* line-height: 24px; */
     color: #fff;
 }
 
@@ -94,6 +94,17 @@ html {
 
 .clearfix:after {
     clear: both;
+}
+
+.skills-wrapper {
+    display: flex;
+    width: 100%;
+    gap: .5rem;
+    justify-content: space-between;
+}
+
+.skill {
+    font-size: 3rem;
 }
 
 .container {
@@ -286,11 +297,11 @@ html {
 
 .section {
     color: #fff;
-    width: 55%;
+    width: 100%;
     right: 10%;
     left: 35%;
     position: relative;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding-bottom: 80px;
     border-bottom: 3px solid rgba(250, 250, 250, 0.25);
 }
@@ -361,8 +372,15 @@ button:hover {
     color: #fff;
 }
 
+.about {
+    width: 100%;
+}
+
 
 /* Left & Right Post */
+.left-image-post p {
+    width: 100%;
+}
 
 .right-image-post {
     margin-top: 60px;
@@ -478,6 +496,7 @@ section.my-work .section-heading {
 .isotope-wrapper {
     position: relative;
     width: 100%;
+    min-height: max-content;
     margin: auto;
 }
 
@@ -497,33 +516,19 @@ section.my-work .section-heading {
     cursor: pointer;
 }
 
-.isotope-toolbar input[type="radio"]:checked + span {
-    color: #a43f49;
-    border-bottom: 2px solid #a43f49;
-}
 
 .isotope-box {
     position: relative;
     width: 100%;
-}
-
-.isotope-toolbar {
-    text-align: center;
-    margin: 10px;
-}
-
-.isotope-toolbar p {
-    border-top: 1px solid #fff;
-    padding-top: 15px;
-}
-
-.isotope-toolbar a {
-    color: #fff;
+    min-height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .isotope-item {
     position: relative;
     width: 48%;
+    height: auto;
     margin: 1%;
     border-bottom: 2px solid rgba(250,250,250,0.1);
     padding-bottom: 30px;
@@ -531,8 +536,6 @@ section.my-work .section-heading {
 }
 
 .isotope-item img {
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     border-radius: 5px;
